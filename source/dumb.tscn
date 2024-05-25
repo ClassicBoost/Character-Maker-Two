@@ -1,0 +1,223 @@
+[gd_scene load_steps=2 format=3 uid="uid://dutu2em6gi8cv"]
+
+[ext_resource type="Script" path="res://source/dumb.gd" id="1_33uxr"]
+
+[node name="dumb" type="Node2D"]
+script = ExtResource("1_33uxr")
+
+[node name="specialStats" type="NinePatchRect" parent="."]
+offset_right = 240.0
+offset_bottom = 416.0
+
+[node name="STR" type="SpinBox" parent="specialStats"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 192.0
+offset_right = 147.063
+offset_bottom = 223.0
+min_value = 1.0
+value = 5.0
+prefix = "S"
+
+[node name="PER" type="SpinBox" parent="specialStats"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 224.0
+offset_right = 147.063
+offset_bottom = 255.0
+min_value = 1.0
+value = 5.0
+prefix = "P"
+
+[node name="END" type="SpinBox" parent="specialStats"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 256.0
+offset_right = 147.063
+offset_bottom = 287.0
+min_value = 1.0
+value = 5.0
+prefix = "E"
+
+[node name="CHA" type="SpinBox" parent="specialStats"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 288.0
+offset_right = 147.063
+offset_bottom = 319.0
+min_value = 1.0
+value = 5.0
+prefix = "C"
+
+[node name="INT" type="SpinBox" parent="specialStats"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 320.0
+offset_right = 147.063
+offset_bottom = 351.0
+min_value = 1.0
+value = 5.0
+prefix = "I"
+
+[node name="AGL" type="SpinBox" parent="specialStats"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 352.0
+offset_right = 147.063
+offset_bottom = 383.0
+min_value = 1.0
+value = 5.0
+prefix = "A"
+
+[node name="LUK" type="SpinBox" parent="specialStats"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 384.0
+offset_right = 147.063
+offset_bottom = 415.0
+min_value = 1.0
+value = 5.0
+prefix = "L"
+
+[node name="Label" type="Label" parent="specialStats"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 160.0
+offset_right = 222.0
+offset_bottom = 187.0
+theme_override_font_sizes/font_size = 8
+text = "Usually goes from 1-10, effects and traits
+can increase this above 10."
+
+[node name="TopShit" type="NinePatchRect" parent="."]
+offset_right = 896.0
+offset_bottom = 128.0
+
+[node name="SystemUse" type="ItemList" parent="TopShit"]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 128.0
+item_count = 5
+item_0/text = "UraniumEngine Rewrite (WIP)"
+item_1/text = "UraniumEngine v3"
+item_2/text = "UraniumEngine v2"
+item_3/text = "Terraria Sugarcoated Engine"
+item_3/disabled = true
+item_4/text = "UranumEngine Classic"
+item_4/disabled = true
+
+[node name="YASS" type="CheckBox" parent="TopShit"]
+layout_mode = 0
+offset_left = 256.0
+offset_right = 448.0
+offset_bottom = 32.0
+text = "Is YASS"
+
+[node name="TA" type="CheckBox" parent="TopShit"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 40.0
+offset_right = 448.0
+offset_bottom = 72.0
+text = "Is The Aftermath"
+
+[node name="TraitsList" type="ItemList" parent="TopShit"]
+layout_mode = 0
+offset_left = 448.0
+offset_right = 832.0
+offset_bottom = 128.0
+select_mode = 1
+allow_rmb_select = true
+
+[node name="reset_traits" type="Button" parent="TopShit"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 128.0
+offset_right = 559.0
+offset_bottom = 176.0
+text = "RESET TRAITS"
+
+[node name="Label2" type="Label" parent="TopShit"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 158.0
+offset_bottom = 155.0
+theme_override_font_sizes/font_size = 8
+text = "VERY UNFINISHED"
+
+[node name="traitsActive" type="Label" parent="TopShit"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 176.0
+offset_right = 832.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 8
+autowrap_mode = 2
+
+[node name="character_name" type="LineEdit" parent="TopShit"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 192.0
+offset_right = 448.0
+offset_bottom = 232.0
+placeholder_text = "CHARACTER NAME"
+
+[node name="LEVEL" type="SpinBox" parent="."]
+offset_left = 64.0
+offset_top = 448.0
+offset_right = 147.063
+offset_bottom = 479.0
+min_value = 1.0
+value = 1.0
+prefix = "LVL"
+
+[node name="Info" type="Label" parent="."]
+offset_left = 448.0
+offset_top = 328.0
+offset_right = 832.0
+offset_bottom = 648.0
+text = "STR
+PER
+END
+CHA
+INT
+AGL
+LUK"
+autowrap_mode = 2
+
+[node name="save" type="Button" parent="."]
+offset_top = 616.0
+offset_right = 128.0
+offset_bottom = 647.0
+text = "SAVE"
+
+[node name="open" type="Button" parent="."]
+offset_left = 128.0
+offset_top = 616.0
+offset_right = 256.0
+offset_bottom = 647.0
+text = "OPEN FOLDER"
+
+[node name="Char" type="Label" parent="."]
+offset_left = 832.0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_font_sizes/font_size = 8
+autowrap_mode = 2
+
+[connection signal="value_changed" from="specialStats/STR" to="." method="_on_str_value_changed"]
+[connection signal="value_changed" from="specialStats/PER" to="." method="_on_per_value_changed"]
+[connection signal="value_changed" from="specialStats/END" to="." method="_on_end_value_changed"]
+[connection signal="value_changed" from="specialStats/CHA" to="." method="_on_cha_value_changed"]
+[connection signal="value_changed" from="specialStats/INT" to="." method="_on_int_value_changed"]
+[connection signal="value_changed" from="specialStats/AGL" to="." method="_on_agl_value_changed"]
+[connection signal="value_changed" from="specialStats/LUK" to="." method="_on_luk_value_changed"]
+[connection signal="item_selected" from="TopShit/SystemUse" to="." method="_on_system_use_item_selected"]
+[connection signal="toggled" from="TopShit/YASS" to="." method="_on_yass_toggled"]
+[connection signal="toggled" from="TopShit/TA" to="." method="_on_ta_toggled"]
+[connection signal="multi_selected" from="TopShit/TraitsList" to="." method="_on_traits_list_multi_selected"]
+[connection signal="pressed" from="TopShit/reset_traits" to="." method="_on_reset_traits_pressed"]
+[connection signal="text_changed" from="TopShit/character_name" to="." method="_on_character_name_text_changed"]
+[connection signal="value_changed" from="LEVEL" to="." method="_on_level_value_changed"]
+[connection signal="pressed" from="save" to="." method="saveChar"]
+[connection signal="pressed" from="open" to="." method="openFolders"]
