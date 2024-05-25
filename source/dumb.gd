@@ -104,17 +104,19 @@ func updateTraits():
 		realSpecialStats[reset] = specialStats[reset]
 	
 	if traitsUsed[0][1] == true:
+		realSpecialStats[5] += 1
+	if traitsUsed[1][1] == true:
 		realSpecialStats[2] -= 3
 		realSpecialStats[5] -= 2
-	if traitsUsed[1][1] == true:
+	if traitsUsed[2][1] == true:
 		realSpecialStats[2] -= 5
 		realSpecialStats[5] -= 4
-	if traitsUsed[2][1] == true:
+	if traitsUsed[3][1] == true:
 		realSpecialStats[2] -= 2
 		realSpecialStats[5] += 2
-	if traitsUsed[3][1] == true:
-		realSpecialStats[2] += 5
-		realSpecialStats[5] -= 5
+	if traitsUsed[4][1] == true:
+		realSpecialStats[2] -= 5
+		realSpecialStats[5] += 5
 	if traitsUsed[25][1] == true:
 		realSpecialStats[1] -= 2
 	if traitsUsed[27][1] == true:
