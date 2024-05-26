@@ -262,7 +262,7 @@ func loadText():
 		for i in range(0,6): # Since Luck does not exist in YASS
 			theEntireText += '\n' + str(textToDisplay[i][0]) + str(textToDisplay[i][2])
 		theEntireText += '\n**LIMB STATUS**\nHead: OKAY\nChest: OKAY\nBelly: OKAY\nLeft Arm: OKAY\nRight Arm: OKAY\nLeft Leg: OKAY\nRight Leg: OKAY\n?'
-		theEntireText += '\n**EFFECTS**\nNONE\n**TRAITS:'
+		theEntireText += '\n**EFFECTS**\nNONE\n**TRAITS**'
 		var totalActive = 0
 		for i in range(0,traitsUsed.size()):
 			if traitsUsed[i][1] == true:
